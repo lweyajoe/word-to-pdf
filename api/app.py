@@ -60,4 +60,4 @@ def allowed_file(filename):
 # Main entry point of the application
 if __name__ == '__main__':
     app.config['UPLOAD_FOLDER'] = 'uploads'  # Define the folder for uploaded files
-    app.run(debug=True)  # Run the Flask application in debug mode
+    app.run(debug=False)  # Run the Flask application in debug mode
