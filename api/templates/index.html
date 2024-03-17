@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DOC to PDF Converter</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Fira+Sans:600" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/style.css') }}">
 	<script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
@@ -547,12 +547,12 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2024 <a href="https://datalytika.net/services/index.html" target="_blank">Datalytika</a>, all rights reserved</div>
+                    <div class="footer-copyright">&copy; 2024 <a href="https://datalytika.net/services/index.html" target="_blank"> Datalytika</a>, all rights reserved</div>
                 </div>
             </div>
         </footer>
     </div>
 
-    <script src="dist/js/main.min.js"></script>
+    <script src="{{ url_for('static', filename='dist/js/main.min.js') }}"></script>
 </body>
 </html>
